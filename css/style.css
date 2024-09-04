@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.main{
+    width:1460;
+    margin:0 auto;
+}
+
+/*========================================*/
+.navbar{
+    width: 100%;
+    height: 60px;
+    
+    background: #000000;
+    
+}
+
+.navbar .main{
+    width: 1460px;
+    height: 100%;
+    
+    margin: 0 auto;
+    line-height: 80PX;
+    }
+
+.navbar .main .logo{
+    width: 20%;
+    height: 100%;
+    
+    float: left;
+
+}
+.navbar .main .logo img{
+    vertical-align:middle;
+}
+
+
+.navbar .main .menu{
+    width: 60%;
+    height: 100%;
+   
+    float: left;
+    text-align: right;
+}
+
+.navbar .main .menu ul{
+    display: inline-block;
+}
+
+
+.navbar .main .menu ul li{
+    float: left;
+    margin: 0 30px;
+}
+
+.navbar .main .menu ul li a{
+    color: azure;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar .main .btn{
+    width: 20%;
+    height: 100%;
+   
+    float: right;
+    text-align: top;
+}
+
+.navbar .main .btn a{
+    background: rgb(179, 32, 32);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+   display: inline;
+
+}
+
+
+
+.banner_part{
+    width: 100%;
+    height: 850px;
+    background-color: #000000;
+}
+
+.banner_part img{
+    width: 100%;
+    height: 125%;
+    
+}
+
+.banner_part .title {
+    text-align: center;
+    color: rgb(179, 10, 10);
+   
+}
+
+.service_part .title h1 p{
+    width:500px;
+    color: rgb(248, 51, 51);
+    margin: 0 auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translatey(-50%);
+}
+
+/*================================================*/
+
+.service_part{
+    background: #000000;
+    
+    height: 700px;
+    margin: 100px 0 ;
+   
+}
+
+.service_part .main{
+    height: 700px;
+    background: #000000;
+ 
+}
+
+.service_part .main .left{
+    width: 23%;
+    height: 400px;
+    background: white;
+    float: left;
+    margin: 0 19px;
+    position: relative;
+    border-radius: 0px;
+    z-index: 2;
+
+   
+}
+
+.service_part .main .left img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+
+}
+
+    
+
+
+
+
+
+.service_part .main .left .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(69, 8, 110, 0.404);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: scale(1);
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(122, 0, 146, 0.2), 0 6px 20px 0;
+   
+}
+
+.service_part .main .left:hover .overlay{
+    opacity: 1;
+    transform: scale(1) ;
+   }
+.service_part .main .left .text{
+    width: 100%;
+    height: 100px;
+    background: #a126c0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: 5s;
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.service_part .main .left:hover .text{
+    transform: translateY(100%);
+    opacity: 1 ;
+   
+}
+.service_part .main .left .text .icon{
+position: absolute;
+left: 16%;
+bottom: 25%;
+top:25%;
+}
+.service_part .main .left .text .icon i{
+    width: 50px;
+    height: 50px;
+    background: #4f016367;
+   
+    color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border: 3px solid #5d277c
+}
+
+.service_part .main2 .left .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 2, 2, 0.253);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: scale(1);
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0;
+   
+}
+
+
+
+
+.service_part .main2 .left:hover .overlay{
+    opacity: 1;
+    transform: scale(1) ;
+   }
+.service_part .main2 .left .text{
+    width: 100%;
+    height: 100px;
+    background: #c00101;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: 5s;
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.service_part .main2 .left:hover .text{
+    transform: translateY(100%);
+    opacity: 1 ;
+   
+}
+.service_part .main2 .left .text .icon{
+position: absolute;
+left: 16%;
+bottom: 25%;
+top:25%;
+}
+.service_part .main2 .left .text .icon i{
+    width: 50px;
+    height: 50px;
+    background: #52030367;
+   
+    color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border: 3px solid #c9002b
+}
+
+
+
+.service_part .main3 .left .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(82, 145, 240, 0.253);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: scale(1);
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0;
+   
+}
+
+
+
+
+.service_part .main3 .left:hover .overlay{
+    opacity: 1;
+    transform: scale(1) ;
+   }
+.service_part .main3 .left .text{
+    width: 100%;
+    height: 100px;
+    background: #308068;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: 5s;
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.service_part .main3 .left:hover .text{
+    transform: translateY(100%);
+    opacity: 1 ;
+   
+}
+.service_part .main3 .left .text .icon{
+position: absolute;
+left: 16%;
+bottom: 25%;
+top:25%;
+}
+.service_part .main3 .left .text .icon i{
+    width: 50px;
+    height: 50px;
+    background: #20537067;
+   
+    color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border: 3px solid #24554a
+}
+
+
+.service_part .main4 .left .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 43, 0.253);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: scale(1);
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0;
+   
+}
+
+
+
+
+.service_part .main4 .left:hover .overlay{
+    opacity: 1;
+    transform: scale(1) ;
+   }
+.service_part .main4 .left .text{
+    width: 100%;
+    height: 100px;
+    background: #2c2b2b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: 5s;
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.service_part .main4 .left:hover .text{
+    transform: translateY(100%);
+    opacity: 1 ;
+   
+}
+.service_part .main4 .left .text .icon{
+position: absolute;
+left: 16%;
+bottom: 25%;
+top:25%;
+}
+.service_part .main4 .left .text .icon i{
+    width: 50px;
+    height: 50px;
+    background: #27272767;
+   
+    color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border: 3px solid #000000
+}
